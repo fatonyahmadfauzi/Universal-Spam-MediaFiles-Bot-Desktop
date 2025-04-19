@@ -43,8 +43,8 @@ python universal_file_sender.py
 
 ## ⚙️ Configuration Options
 
-| **Parameter** | **Description**           | **Default** | **Recommended** |     |
-| ------------- | ------------------------- | ----------- | --------------- | --- |
+| **Parameter** | **Description**           | **Default** | **Recommended** |
+| ------------- | ------------------------- | ----------- | --------------- |
 | File Path     | File to send              | -           | Any file type   |
 | Repeat Count  | Number of times to send   | 1           | 1-20            |
 | Send Delay    | Seconds between sends     | 1           | 0.5-5           |
