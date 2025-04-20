@@ -1,0 +1,25 @@
+# 🔧 DEVELOPMENT EXTRAS (requirements-dev.txt)
+# --------------------------------------------
+# Testing & Quality Assurance
+pytest==7.4.0              # Test runner
+pytest-cov==4.1.0          # Coverage reporting
+pytest-mock==3.11.1        # Mocking support
+pytest-timeout==2.1.0      # Prevent hanging tests
+
+# Code Quality & Formatting
+black==23.7.0              # Strict code formatting
+flake8==6.0.0              # PEP8 compliance
+isort==5.12.0              # Import sorting
+mypy==1.5.1                # Static type checking
+
+# Documentation
+mkdocs==1.4.3              # Documentation generator
+mkdocs-material==9.1.18    # Modern docs theme
+
+# Pre-commit Hooks
+pre-commit==3.3.3          # Git hook management
+commitizen==2.42.1         # Standardized commits
+
+# Debugging & Profiling
+ipdb==0.13.13              # Enhanced debugger
+memory-profiler==0.61.0    # Memory usage tracking

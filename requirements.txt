@@ -1,0 +1,29 @@
+# 📦 Core Dependencies
+pyautogui==0.9.54          # Keyboard/mouse automation
+pyperclip==1.8.2           # Cross-platform clipboard access
+psutil==5.9.5              # System monitoring (for resource management)
+
+# 🖥️ Windows-Specific
+pywin32==306               # Windows API integration (required for PowerShell clipboard)
+pypiwin32==223             # Windows registry access
+
+# ⏱ Timing & Utilities
+python-dotenv==1.0.0       # Environment management
+schedule==1.2.0            # Optional for timed sending
+
+# 🧪 Testing & Development
+pytest==7.4.0              # Test framework
+mypy==1.5.1                # Static type checking
+
+
+## Platform-Specific Notes:
+
+## For Windows:
+# Mandatory Windows packages
+pywin32==306 ; sys_platform == 'win32'
+pypiwin32==223 ; sys_platform == 'win32'
+
+## For Mac/Linux (Experimental):
+# Alternative clipboard managers
+xclip==1.6 ; sys_platform == 'linux'
+pyobjc-framework-Cocoa==9.2 ; sys_platform == 'darwin'
