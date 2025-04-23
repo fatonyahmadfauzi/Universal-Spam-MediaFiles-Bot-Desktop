@@ -20,9 +20,8 @@ A cross-platform automation tool that sends files to messaging apps with smart f
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/universal-file-sender.git
-cd universal-file-sender
-
+git clone -b single-file --single-branch https://github.com/fatonyahmadfauzi/Universal-Spam-MediaFiles-Bot-Desktop.git Universal-Spam-MediaFiles-Bot-Desktop_Single-File
+cd Universal-Spam-MediaFiles-Bot-Desktop_Single-File
 # Install dependencies
 pip install pyautogui
 ```
@@ -30,7 +29,7 @@ pip install pyautogui
 ## 🚀 Usage
 
 ```bash
-python universal_file_sender.py
+python mediafiles.py
 ```
 
 **Follow the on-screen prompts:**
