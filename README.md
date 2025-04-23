@@ -20,7 +20,7 @@ A cross-platform automation tool to send files to any web-based messaging servic
 
 ```bash
 # Clone the repository
-git clone -b multi-line --single-branch https://github.com/fatonyahmadfauzi/Universal-Spam-MediaFiles-Bot-Desktop.git Universal-Spam-MediaFiles-Bot-Desktop_Multi-File
+git clone -b multi-file --single-branch https://github.com/fatonyahmadfauzi/Universal-Spam-MediaFiles-Bot-Desktop.git Universal-Spam-MediaFiles-Bot-Desktop_Multi-File
 cd Universal-Spam-MediaFiles-Bot-Desktop_Multi-File
 
 # Install core dependencies
