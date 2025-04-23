@@ -1,63 +1,49 @@
-# WhatsApp Multi-File Sender Bot 🚀
+# 🌐 Universal File Sender Bot
 
 ![Demo](demo.gif)
 
-A Python automation tool to send multiple files via WhatsApp Web with customizable intervals and status tracking.
+A cross-platform automation tool to send files to any web-based messaging service (WhatsApp, Telegram, Messenger, etc.)
 
-## 🔥 Features
+## 🔥 Core Features
 
-- **Multi-File Support**: Send multiple files in one batch (type "selesai" when done)
-- **Smart Tracking**: Individual progress for each file
+- **Multi-Service Support**: Works with WhatsApp Web, Telegram Web, Facebook Messenger, and most browser-based chat platforms
+- **Batch File Sending**: Send multiple files in one operation (type "done" when finished)
+- **Smart Tracking**:
+  - Individual file progress indicators
+  - Success/failure reporting per file
 - **Flexible Configuration**:
-  - Set repeat counts and delays
-  - Adjust upload timing per file size
-- **Status Updates**: Optional timestamps and counters
-- **Cross-Platform**: Works on Windows (Mac/Linux support coming)
+  - Custom repeat intervals (1-100x)
+  - Adjustable delays between sends (0.5-30s)
+  - File-size aware upload timing
 
 ## 🛠 Installation
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/whatsapp-file-sender.git
-cd whatsapp-file-sender
+git clone -b multi-line --single-branch https://github.com/fatonyahmadfauzi/Universal-Spam-MediaFiles-Bot-Desktop.git Universal-Spam-MediaFiles-Bot-Desktop_Multi-File
+cd Universal-Spam-MediaFiles-Bot-Desktop_Multi-File
 
-# Install dependencies
+# Install core dependencies
 pip install -r requirements.txt
 ```
 
-## 🚀 Usage
+## 🚀 Basic Usage
 
 ```bash
-python whatsapp_file_sender.py
+python mediafiles.py
 ```
 
-**Follow the prompts:**
+**Interactive Guide:**
 
-1. Scan QR code when prompted
-2. Enter recipient name (exact match)
-3. Add files one by one (type "selesai" to finish)
-4. Configure sending parameters:
+1. Open your web messaging platform in Chrome
+2. Navigate to the desired chat
+3. Run the script and follow prompts:
 
-- Repeat count
-- Delay between sends
-- Upload wait time
-- Bot prompts (Y/N)
+- Add files one by one (type "done" to finish)
+- Set sending parameters
+- Activate status messages (optional)
 
-## 📊 Example Workflow
-
-```text
-Nama kontak/grup: Team Project
-
-Masukkan path file (ketik 'selesai' jika sudah):
-File 1: C:\docs\presentasi.pdf
-File 2: D:\images\chart.png
-File 3: selesai
-
-Jumlah pengulangan: 3
-Delay antar pengiriman (detik): 5
-Waktu upload file (detik): 3
-Tambahkan bot prompt? (Y/N): Y
-```
+4. Click the message input box when instructed
 
 ## ⚙️ Configuration Options
 
@@ -68,13 +54,3 @@ Tambahkan bot prompt? (Y/N): Y
 | Send Delay    | Seconds between batches | 1           | 1-5             |
 | Upload Delay  | Seconds per file upload | 3           | 2-10            |
 | Bot Prompt    | Add status messages     | N           | Y/N             |
-
-## 📜 License
-
-MIT License - See [LICENSE.md]()
-
-## ❗ Important Notes
-
-- Use responsibly and comply with WhatsApp's ToS
-- Recommended max 5 messages/minute
-- Not affiliated with WhatsApp/Meta
