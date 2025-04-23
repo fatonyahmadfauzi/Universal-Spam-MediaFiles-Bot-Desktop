@@ -1,97 +1,80 @@
-# 📤 Universal File Sender with Bot Prompt
+# WhatsApp Multi-File Sender Bot 🚀
 
-![Demo Animation](https://via.placeholder.com/800x400?text=Demo+Animation+Here)
-_(Replace with actual demo GIF)_
+![Demo](demo.gif)
 
-A cross-platform automation tool that sends files to messaging apps with smart features.
+A Python automation tool to send multiple files via WhatsApp Web with customizable intervals and status tracking.
 
-## 🌟 Features
+## 🔥 Features
 
-- **Universal Compatibility**  
-  Works with WhatsApp Web, Telegram Web, Facebook Messenger, and most browser-based messaging platforms
-- **Smart Bot Prompts**  
-  Optional timestamps and counters (`[HH:MM:SS | X/Y]`)
-- **Auto-Upload Detection**  
-  Calculates required upload time based on file size
-- **User-Friendly**  
-  Drag & drop support and visual progress indicators
+- **Multi-File Support**: Send multiple files in one batch (type "selesai" when done)
+- **Smart Tracking**: Individual progress for each file
+- **Flexible Configuration**:
+  - Set repeat counts and delays
+  - Adjust upload timing per file size
+- **Status Updates**: Optional timestamps and counters
+- **Cross-Platform**: Works on Windows (Mac/Linux support coming)
 
 ## 🛠 Installation
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/universal-file-sender.git
-cd universal-file-sender
+git clone https://github.com/yourusername/whatsapp-file-sender.git
+cd whatsapp-file-sender
 
 # Install dependencies
-pip install pyautogui
+pip install -r requirements.txt
 ```
 
 ## 🚀 Usage
 
 ```bash
-python universal_file_sender.py
+python whatsapp_file_sender.py
 ```
 
-**Follow the on-screen prompts:**
+**Follow the prompts:**
 
-1. Drag & drop your file or enter path manually
-2. Set number of repeats
-3. Configure delays (between sends and upload time)
-4. Enable/disable bot prompts (Y/N)
-5. Focus on your messaging app's input box
+1. Scan QR code when prompted
+2. Enter recipient name (exact match)
+3. Add files one by one (type "selesai" to finish)
+4. Configure sending parameters:
+
+- Repeat count
+- Delay between sends
+- Upload wait time
+- Bot prompts (Y/N)
+
+## 📊 Example Workflow
+
+```text
+Nama kontak/grup: Team Project
+
+Masukkan path file (ketik 'selesai' jika sudah):
+File 1: C:\docs\presentasi.pdf
+File 2: D:\images\chart.png
+File 3: selesai
+
+Jumlah pengulangan: 3
+Delay antar pengiriman (detik): 5
+Waktu upload file (detik): 3
+Tambahkan bot prompt? (Y/N): Y
+```
 
 ## ⚙️ Configuration Options
 
-| **Parameter** | **Description**           | **Default** | **Recommended** |
-| ------------- | ------------------------- | ----------- | --------------- |
-| File Path     | File to send              | -           | Any file type   |
-| Repeat Count  | Number of times to send   | 1           | 1-20            |
-| Send Delay    | Seconds between sends     | 1           | 0.5-5           |
-| Upload Delay  | Seconds for file upload   | 3           | 3-15\*          |
-| Bot Prompt    | Add status messages (Y/N) | N           | Y/N             |
-
-\*_Automatically calculated based on file size_
-
-## 📋 Requirements
-
-- Python 3.6+
-- Windows OS (Mac/Linux requires modifications)
-- Browser-based messaging app (WhatsApp Web, Telegram Web, etc.)
-
-## 🚨 Limitations
-
-1. **Platform Support**:
-   - Currently optimized for Windows
-   - Requires manual adjustment for Mac/Linux
-2. **File Size**:
-   - Maximum tested: 25MB
-   - Larger files may require increased upload delay
-3. **Security**:
-   - Some platforms may flag rapid automated sends
-   - Recommended max: 5 messages/minute
-
-## 🛠️ Troubleshooting
-
-**Common Issues**:
-
-- `File not found` → Use absolute paths
-- `Send failed` → Increase upload delay
-- `Clipboard errors` → Run as Administrator
-
-**For Developers**:
-
-```python
-# To adapt for Mac/Linux:
-# Replace PowerShell commands with:
-subprocess.run(['pbcopy' if sys.platform == 'darwin' else 'xclip', file_path])
-```
+| **Parameter** | **Description**         | **Default** | **Recommended** |
+| ------------- | ----------------------- | ----------- | --------------- |
+| File Paths    | Multiple files to send  | -           | Any file type   |
+| Repeat Count  | Times to repeat sending | 1           | 1-10            |
+| Send Delay    | Seconds between batches | 1           | 1-5             |
+| Upload Delay  | Seconds per file upload | 3           | 2-10            |
+| Bot Prompt    | Add status messages     | N           | Y/N             |
 
 ## 📜 License
 
-MIT License - Free for personal and commercial use
+MIT License - See [LICENSE.md]()
 
-## 📬 Contact
+## ❗ Important Notes
 
-For support/questions:
-[Your Email] · [Project Issues] · [Twitter Handle]
+- Use responsibly and comply with WhatsApp's ToS
+- Recommended max 5 messages/minute
+- Not affiliated with WhatsApp/Meta
