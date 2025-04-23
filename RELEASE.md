@@ -1,6 +1,6 @@
 # Release Notes
 
-## v1.2.0 - Multi-File Enhancement (2023-11-20)
+## v1.2.0 - Multi-File Enhancement (2025-04-24)
 
 ### Added
 
